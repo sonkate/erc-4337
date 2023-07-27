@@ -1,0 +1,453 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1690141104835,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Ownable": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Ownable.sol/Ownable.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+      "lastModificationDate": 1690141104851,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Context.sol/Context.json"
+        }
+      }
+    },
+    "src/BasePaymaster.sol": {
+      "lastModificationDate": 1690141276913,
+      "contentHash": "b6ab2e113312bde19c7eb2ce9d0248a4",
+      "sourceName": "src/BasePaymaster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "src/EntryPoint.sol",
+        "src/ICreate2Deployer.sol",
+        "src/IPaymaster.sol",
+        "src/IWallet.sol",
+        "src/StakeManager.sol",
+        "src/UserOperation.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "BasePaymaster": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "BasePaymaster.sol/BasePaymaster.json"
+        }
+      }
+    },
+    "src/BaseWallet.sol": {
+      "lastModificationDate": 1690140983522,
+      "contentHash": "0c91b2cd5c21cd714894054eac207321",
+      "sourceName": "src/BaseWallet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/EntryPoint.sol",
+        "src/ICreate2Deployer.sol",
+        "src/IPaymaster.sol",
+        "src/IWallet.sol",
+        "src/StakeManager.sol",
+        "src/UserOperation.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "BaseWallet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "BaseWallet.sol/BaseWallet.json"
+        }
+      }
+    },
+    "src/EntryPoint.sol": {
+      "lastModificationDate": 1690140982594,
+      "contentHash": "3c245f096c46b9dbef52dab4cdf62d97",
+      "sourceName": "src/EntryPoint.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/ICreate2Deployer.sol",
+        "src/IPaymaster.sol",
+        "src/IWallet.sol",
+        "src/StakeManager.sol",
+        "src/UserOperation.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "EntryPoint": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "EntryPoint.sol/EntryPoint.json"
+        }
+      }
+    },
+    "src/ICreate2Deployer.sol": {
+      "lastModificationDate": 1690140982074,
+      "contentHash": "fdbe34ecea77e49af332f6390195075a",
+      "sourceName": "src/ICreate2Deployer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "ICreate2Deployer": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "ICreate2Deployer.sol/ICreate2Deployer.json"
+        }
+      }
+    },
+    "src/IPaymaster.sol": {
+      "lastModificationDate": 1690140981470,
+      "contentHash": "e22073a387ab074e5d15c88186ddc166",
+      "sourceName": "src/IPaymaster.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/UserOperation.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "IPaymaster": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IPaymaster.sol/IPaymaster.json"
+        }
+      }
+    },
+    "src/IWallet.sol": {
+      "lastModificationDate": 1690140980770,
+      "contentHash": "f29fb4a932e666499b57a1bdf3fbb51b",
+      "sourceName": "src/IWallet.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/UserOperation.sol"
+      ],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "IWallet": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IWallet.sol/IWallet.json"
+        }
+      }
+    },
+    "src/StakeManager.sol": {
+      "lastModificationDate": 1690140979774,
+      "contentHash": "8d11e18de36a03c3c98db6f2a3bddaaf",
+      "sourceName": "src/StakeManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "StakeManager": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StakeManager.sol/StakeManager.json"
+        }
+      }
+    },
+    "src/UserOperation.sol": {
+      "lastModificationDate": 1690140978318,
+      "contentHash": "14770c514c9bd1ea4a22883e797df136",
+      "sourceName": "src/UserOperation.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.19",
+      "artifacts": {
+        "UserOperationLib": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "UserOperation.sol/UserOperationLib.json"
+        }
+      }
+    }
+  }
+}

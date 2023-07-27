@@ -1,0 +1,430 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "callGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "verificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxPriorityFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "paymaster",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct UserOperation",
+          "name": "userOp",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "missingWalletFunds",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateUserOp",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,address,bytes,bytes),bytes32,uint256)": "fcbac1f4"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"initCode\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"callGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"verificationGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"preVerificationGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxFeePerGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxPriorityFeePerGas\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"paymaster\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"paymasterData\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"internalType\":\"struct UserOperation\",\"name\":\"userOp\",\"type\":\"tuple\"},{\"internalType\":\"bytes32\",\"name\":\"requestId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"missingWalletFunds\",\"type\":\"uint256\"}],\"name\":\"validateUserOp\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/IWallet.sol\":\"IWallet\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/IWallet.sol\":{\"keccak256\":\"0x08492113b3efca41a9b5661cc578469ae5adbc270b4739e62647291045c79433\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6fb33acdc8ad1d3362cb8b108477f9efb8334fa7629449b14e80f95485859431\",\"dweb:/ipfs/QmTXLoGC2MBdZc4wXPjsdVDN8r1MtkZ92GtQU63BNCgacv\"]},\"src/UserOperation.sol\":{\"keccak256\":\"0x7d6a9690b67f922eeb477c9b797e6e46f99b82569f0675ac27a4abf27b9af046\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://ff96957f89ed876904e1265cbea13452f1da2cc0397bb8f67ca6879a2c3d885e\",\"dweb:/ipfs/QmdSBux7nW9Rnd7VRhVh2ffUaWKpBgr923Fq482igQfzUm\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "struct UserOperation",
+              "name": "userOp",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "sender",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "nonce",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "initCode",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "callData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "callGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "verificationGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "preVerificationGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxFeePerGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxPriorityFeePerGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "address",
+                  "name": "paymaster",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "paymasterData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "signature",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32",
+              "name": "requestId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "missingWalletFunds",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "validateUserOp"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/IWallet.sol": "IWallet"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/IWallet.sol": {
+        "keccak256": "0x08492113b3efca41a9b5661cc578469ae5adbc270b4739e62647291045c79433",
+        "urls": [
+          "bzz-raw://6fb33acdc8ad1d3362cb8b108477f9efb8334fa7629449b14e80f95485859431",
+          "dweb:/ipfs/QmTXLoGC2MBdZc4wXPjsdVDN8r1MtkZ92GtQU63BNCgacv"
+        ],
+        "license": "GPL-3.0"
+      },
+      "src/UserOperation.sol": {
+        "keccak256": "0x7d6a9690b67f922eeb477c9b797e6e46f99b82569f0675ac27a4abf27b9af046",
+        "urls": [
+          "bzz-raw://ff96957f89ed876904e1265cbea13452f1da2cc0397bb8f67ca6879a2c3d885e",
+          "dweb:/ipfs/QmdSBux7nW9Rnd7VRhVh2ffUaWKpBgr923Fq482igQfzUm"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/IWallet.sol",
+    "id": 1839,
+    "exportedSymbols": {
+      "IWallet": [
+        1838
+      ],
+      "UserOperation": [
+        2327
+      ],
+      "UserOperationLib": [
+        2496
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:224:7",
+    "nodes": [
+      {
+        "id": 1826,
+        "nodeType": "PragmaDirective",
+        "src": "36:23:7",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 1827,
+        "nodeType": "ImportDirective",
+        "src": "61:29:7",
+        "nodes": [],
+        "absolutePath": "src/UserOperation.sol",
+        "file": "./UserOperation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 1839,
+        "sourceUnit": 2497,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 1838,
+        "nodeType": "ContractDefinition",
+        "src": "92:167:7",
+        "nodes": [
+          {
+            "id": 1837,
+            "nodeType": "FunctionDefinition",
+            "src": "116:141:7",
+            "nodes": [],
+            "functionSelector": "fcbac1f4",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validateUserOp",
+            "nameLocation": "125:14:7",
+            "parameters": {
+              "id": 1835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1830,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "172:6:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1837,
+                  "src": "149:29:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$2327_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 1829,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1828,
+                      "name": "UserOperation",
+                      "nameLocations": [
+                        "149:13:7"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2327,
+                      "src": "149:13:7"
+                    },
+                    "referencedDeclaration": 2327,
+                    "src": "149:13:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$2327_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1832,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "196:9:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1837,
+                  "src": "188:17:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1831,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "188:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1834,
+                  "mutability": "mutable",
+                  "name": "missingWalletFunds",
+                  "nameLocation": "223:18:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1837,
+                  "src": "215:26:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1833,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "139:108:7"
+            },
+            "returnParameters": {
+              "id": 1836,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "256:0:7"
+            },
+            "scope": 1838,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IWallet",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          1838
+        ],
+        "name": "IWallet",
+        "nameLocation": "102:7:7",
+        "scope": 1839,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 7
+}

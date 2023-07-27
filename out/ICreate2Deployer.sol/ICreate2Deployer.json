@@ -1,0 +1,280 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "initCode",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "salt",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deploy(bytes,bytes32)": "4af63f02"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"initCode\",\"type\":\"bytes\"},{\"internalType\":\"bytes32\",\"name\":\"salt\",\"type\":\"bytes32\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"create2-based deployer (eip-2470)\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/ICreate2Deployer.sol\":\"ICreate2Deployer\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/ICreate2Deployer.sol\":{\"keccak256\":\"0x9c87355c3336c634fed9ddefaf25213010bcaba6f2f093883c479370242ab2bd\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://e0f0137adb8cae68ecaabe17f0d59490c256f7d18779fe5478a647f126a27cd0\",\"dweb:/ipfs/QmfXUGxzGyNcnvfd8ucZF1sFCnif9hhWi2NqwPrujermzJ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "salt",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "deploy",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/ICreate2Deployer.sol": "ICreate2Deployer"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/ICreate2Deployer.sol": {
+        "keccak256": "0x9c87355c3336c634fed9ddefaf25213010bcaba6f2f093883c479370242ab2bd",
+        "urls": [
+          "bzz-raw://e0f0137adb8cae68ecaabe17f0d59490c256f7d18779fe5478a647f126a27cd0",
+          "dweb:/ipfs/QmfXUGxzGyNcnvfd8ucZF1sFCnif9hhWi2NqwPrujermzJ"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/ICreate2Deployer.sol",
+    "id": 1792,
+    "exportedSymbols": {
+      "ICreate2Deployer": [
+        1791
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:202:5",
+    "nodes": [
+      {
+        "id": 1780,
+        "nodeType": "PragmaDirective",
+        "src": "36:23:5",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 1791,
+        "nodeType": "ContractDefinition",
+        "src": "106:131:5",
+        "nodes": [
+          {
+            "id": 1790,
+            "nodeType": "FunctionDefinition",
+            "src": "139:96:5",
+            "nodes": [],
+            "functionSelector": "4af63f02",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nameLocation": "148:6:5",
+            "parameters": {
+              "id": 1786,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1783,
+                  "mutability": "mutable",
+                  "name": "initCode",
+                  "nameLocation": "168:8:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1790,
+                  "src": "155:21:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1782,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1785,
+                  "mutability": "mutable",
+                  "name": "salt",
+                  "nameLocation": "186:4:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1790,
+                  "src": "178:12:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 1784,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "178:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:37:5"
+            },
+            "returnParameters": {
+              "id": 1789,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1788,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1790,
+                  "src": "226:7:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1787,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "226:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "225:9:5"
+            },
+            "scope": 1791,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICreate2Deployer",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 1781,
+          "nodeType": "StructuredDocumentation",
+          "src": "61:44:5",
+          "text": " create2-based deployer (eip-2470)"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          1791
+        ],
+        "name": "ICreate2Deployer",
+        "nameLocation": "116:16:5",
+        "scope": 1792,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 5
+}
